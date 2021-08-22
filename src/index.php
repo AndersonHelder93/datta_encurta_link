@@ -29,7 +29,7 @@
 
         <div class="container-fluid">
           <form action=method="POST">
-            <input type="text" name="url" placeholder="http://www.goole.com" required>
+            <input type="text" name="url" placeholder="http://www.google.com" required>
             <button class="btn waves-effect waves-light" type="submit" name="action">encurtar
               <i class="material-icons right"></i>
             </button>
