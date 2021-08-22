@@ -35,9 +35,9 @@ $results = $stm->fetchAll();
       <th>URL Original</th>
       <th>URL Encurtada</th>
       <th>Quantidade de Cliks</th>
-      <th>Data e hora deletado</th>
-      <th>Data e hora criado</th>
-      <th>Excluir dados</th>
+      <th>Data e Hora Deletado</th>
+      <th>Data e Hora Criado</th>
+      <th>Excluir Dados</th>
 
     </tr>
 
@@ -48,7 +48,7 @@ $results = $stm->fetchAll();
         <th><?php echo ($results[$i]['id']) ?></th>
         <th><?php echo ($results[$i]['url_original']) ?></th>
         <th><a target="blank" href="<?php echo ($results[$i]['url_original']) ?>" onclick="incrementClick(<?php echo ($results[$i]['id']) ?>)"><?php echo ($results[$i]['url_encurtada']) ?></a></th>
-        <th class="d-flex justify-content-center"><a href=<?php echo ("http://localhost/desafio-vsdata/src/controllers/ver-clicks.php?id=" . $results[$i]['id']) ?>>Ver</a></th>
+        <th class="d-flex justify-content-center"><a href=<?php echo ("http://localhost/desafio-vsdata/src/controllers/ver-clicks.php?id=" . $results[$i]['id']) ?>>Visualizar</a></th>
         <th>
           <?php
           if ($results[$i]['datahora_deletado'] !== null) {
